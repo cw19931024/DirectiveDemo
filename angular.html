@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+      *{padding:0;margin:0;border: 0;text-decoration: none;list-style-type: none;}
+      .tree{width: 500px;height:auto;background: black;margin: 0 auto;color:white;padding: 20px 10px;}
+      .data li{margin: 10px;}
+      .data ul{padding-right: 10px;margin-left: 10px;}
+      .data li input[type='checkbox']{margin-right:5px;vertical-align: top;}
+      .clickDiv{width: 100%;background:white;}
+      .clickDiv .clickList{color:red;}
+  </style>
+</head>
+<body>
+    <div class="container hidden">
+        <div class="tree">
+          <ul class="data">
+              <li class="children">
+                  <div class="dataName" >
+                      <input type="checkbox">饮料
+                  </div>
+                  <div class="chilDiv">
+                    <ul>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="children">
+                  <div class="dataName">
+                      <input type="checkbox">食物
+                  </div>
+                  <div class="chilDiv">
+                    <ul>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="children">
+                  <div class="dataName">
+                      <input type="checkbox">水果
+                  </div>
+                  <div class="chilDiv">
+                    <ul>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="children">
+                  <div class="dataName">
+                      <input type="checkbox">包子
+                  </div>
+                  <div class="chilDiv">
+                    <ul>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+              <li class="children">
+                  <div class="dataName">
+                      <input type="checkbox">米饭
+                  </div>
+                  <div class="chilDiv">
+                    <ul>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                      <li>
+                          <div class="dataName">
+                                <input type="checkbox"/>子节点
+                          </div>
+
+                      </li>
+                    </ul>
+                  </div>
+              </li>
+          </ul>
+        </div>
+    </div>
+    <div class="container" ng-controller="Ctrl" >
+        <tree></tree>
+    </div>
+</body>
+<script src="js/angular.js"></script>
+<script src="js/directive.js" charset="utf-8"></script>
+<script src="js/tree.js" type="text/javascript" charset="utf-8"></script>
+</html>

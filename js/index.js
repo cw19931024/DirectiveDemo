@@ -1,0 +1,21 @@
+var vm = new  Vue({
+	el:"#app",
+	data:{
+		message:"hello.word~",
+		name:"chengwen",
+		alert:function(id){
+			alert(id)
+		},
+		list:[
+			{name:"程文",age:18,address:"湖北武汉"},
+			{name:"程文",age:18,address:"湖北武汉"},
+			{name:"程文",age:18,address:"湖北武汉"},
+			{name:"程文",age:18,address:"湖北武汉"},
+			{name:"程文",age:18,address:"湖北武汉"}
+			]
+	}
+})
+vm.$watch('name',function(a,b){
+	console.log(a.length);
+	console.log(b.length);
+})

@@ -1,0 +1,24 @@
+<div class='tree' ng-controller="treeCtrl">
+	{{name}}
+    <ul class='data'>
+        <li class='children' ng-repeat='item in list'>
+            <div class='dataName'>
+                <input type='checkbox' ng-click="addData(item)" >{{item.name}}
+            </div>
+            <div class='chilDiv'>
+                <ul>
+                    <li ng-repeat='is in item.children'>
+                        <div>
+                            <input type='checkbox' ng-click="addData(is)" >{{is.name}}
+                        <div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    <div class='clickDiv'>
+        <ul>
+            <li class='clickList' ng-repeat='list in SortList'>{{list.name}}</li>
+        </ul>
+    </div>
+</div>
