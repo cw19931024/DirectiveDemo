@@ -1,0 +1,9 @@
+ *{padding:0;margin:0;border: 0;text-decoration: none;list-style-type: none;}
+.tree{display: inline-block;height:auto;background: black;margin: 0 auto;color:white;padding: 20px 10px;}
+.data{width: 500px;border:1px solid white;display: inline-block;vertical-align: top;height: 612px;margin-right: 5px;}
+.data li{margin: 10px;}
+.data ul{padding-right: 10px;margin-left: 10px;}
+.data li input[type='checkbox']{margin-right:5px;vertical-align: top;}
+.select{width: 500px;display: inline-block;vertical-align: top;border: 1px solid;height: 612px;margin-left: 5px;padding: 10px;}
+.select table{width: 100%;text-align: center;border: 1px solid white}
+.select table tr th,td{text-align: center;border: 1px solid white;height: 50px;padding: 0 5px;}

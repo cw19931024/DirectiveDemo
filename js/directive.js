@@ -25,6 +25,6 @@ app.controller('Ctrl',function($scope) {
             {name:'菜粥'},
             {name:'牛肉粥'},
             {name:'羊肉粥'}
-        ]},
+        ]}
     ]
 })

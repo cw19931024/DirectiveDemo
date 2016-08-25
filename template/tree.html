@@ -1,24 +1,33 @@
-<div class='tree' ng-controller="treeCtrl">
-	{{name}}
+<div class='tree'>
+	{{titles}}
     <ul class='data'>
-        <li class='children' ng-repeat='item in list'>
+        <li class='children' ng-repeat='item in treelist track by $index'>
             <div class='dataName'>
-                <input type='checkbox' ng-click="addData(item)" >{{item.name}}
+                <input type='checkbox' ng-model='item.status' ng-disabled="item.active" ng-true-value='true' ng-false-value='false' ng-change="Status(item)">{{item.name}}
             </div>
             <div class='chilDiv'>
                 <ul>
                     <li ng-repeat='is in item.children'>
                         <div>
-                            <input type='checkbox' ng-click="addData(is)" >{{is.name}}
+                            <input type='checkbox' ng-model='is.status' ng-disabled="is.active"  ng-true-value='true' ng-false-value='false' ng-change="Status(is)">{{is.name}}
                         <div>
                     </li>
                 </ul>
             </div>
         </li>
     </ul>
-    <div class='clickDiv'>
-        <ul>
-            <li class='clickList' ng-repeat='list in SortList'>{{list.name}}</li>
-        </ul>
+    <div class="select">
+        <table>
+            <tr>
+                <th width='25'><input type="checkbox" class="form-control"></th>
+                <th>分类名称</th>
+                <th>操作</th>
+            </tr>
+            <tr ng-repeat="item in Selectlist">
+                <td><input type="checkbox" class="form-control"></td>
+                <td>{{item.name}}</td>
+                <td width='60' ><a href="javascript:;" class="btn btn-primary" ng-click='del($index,item.name)' >删除</a></td>
+            </tr>
+        </table>
     </div>
 </div>
